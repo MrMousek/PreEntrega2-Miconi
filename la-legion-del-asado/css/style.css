@@ -4,8 +4,10 @@
 
 body {
     font-family: "Roboto Condensed", 'Trebuchet MS', 'Tahoma', sans-serif;
-    background-color: #1B1B1B; /* Fondo negro carbón */
-    color: #E0E0E0; /* Blanco humo para texto principal */
+    background-color: #1B1B1B;
+    /* Fondo negro carbón */
+    color: #E0E0E0;
+    /* Blanco humo para texto principal */
 }
 
 * {
@@ -18,7 +20,8 @@ body {
 /*! HEADER !*/
 
 header {
-    background-color: #333; /* Gris oscuro */
+    background-color: #333;
+    /* Gris oscuro */
     padding: 20px;
     margin: auto;
     display: flex;
@@ -38,7 +41,8 @@ header h1 {
     padding: 0;
     font-size: 3rem;
     flex: 1;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
 }
 
 header h4 {
@@ -47,7 +51,7 @@ header h4 {
     padding: 0;
     font-size: 1.5rem;
     flex: 1;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 
@@ -58,27 +62,33 @@ header h4 {
 }
 
 .navbar-nav .nav-link.show {
-    color: #f5f5dc; /* Texto claro */
+    color: #f5f5dc;
+    /* Texto claro */
 }
 
 
 .navbar a {
-    color: #f5f5dc; /* Texto claro */
-    font-weight: 600; /* Texto un poco más grueso */
-    text-transform: uppercase; /* Mayúsculas para darle más presencia */
+    color: #f5f5dc;
+    /* Texto claro */
+    font-weight: 600;
+    /* Texto un poco más grueso */
+    text-transform: uppercase;
+    /* Mayúsculas para darle más presencia */
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #e28743; /* Cambia a un tono naranja al pasar el mouse */
+    color: #e28743;
+    /* Cambia a un tono naranja al pasar el mouse */
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    color: #ffaf1a; /* Color distintivo para la marca */
+    color: #ffaf1a;
+    /* Color distintivo para la marca */
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: auto;
     height: 10vh;
     margin-left: 30px;
@@ -89,35 +99,45 @@ header h4 {
 }
 
 .navbar-toggler-icon {
-    filter: brightness(0) invert(1); /* Icono de hamburguesa claro */
+    filter: brightness(0) invert(1);
+    /* Icono de hamburguesa claro */
 }
 
 .navbar-nav .nav-link.active {
-    color: #ffaf1a; /* Resalta la opción activa */
+    color: #ffaf1a;
+    /* Resalta la opción activa */
     font-weight: bold;
 }
 
 
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
-    background-color: #444; /* Gris más oscuro */
+    background-color: #444;
+    /* Gris más oscuro */
 }
 
 .btn-outline-success {
-    --bs-btn-color: #FF6F00; /* Naranja cálido */
-    --bs-btn-border-color: #000000; /* Rojo intenso */
-    --bs-btn-hover-color: #1B1B1B; /* Fondo carbón al pasar */
-    --bs-btn-hover-bg: #FF6F00; /* Naranja cálido */
+    --bs-btn-color: #FF6F00;
+    /* Naranja cálido */
+    --bs-btn-border-color: #000000;
+    /* Rojo intenso */
+    --bs-btn-hover-color: #1B1B1B;
+    /* Fondo carbón al pasar */
+    --bs-btn-hover-bg: #FF6F00;
+    /* Naranja cálido */
     --bs-btn-hover-border-color: #FF6F00;
-    --bs-btn-focus-shadow-rgb: 255, 111, 0; /* Sombra naranja */
+    --bs-btn-focus-shadow-rgb: 255, 111, 0;
+    /* Sombra naranja */
     --bs-btn-active-color: #1B1B1B;
-    --bs-btn-active-bg: #D32F2F; /* Rojo intenso */
+    --bs-btn-active-bg: #D32F2F;
+    /* Rojo intenso */
     --bs-btn-active-border-color: #D32F2F;
 }
 
 .dropdown-menu {
     --bs-dropdown-bg: #333;
 }
+
 /*! MAIN !*/
 
 main {
@@ -135,7 +155,7 @@ main {
     color: #E0E0E0;
 }
 
-.logo-no-broken{
+.logo-no-broken {
     width: 180px;
     height: 100px;
 }
@@ -151,25 +171,30 @@ p {
 }
 
 .cta-button {
-    background-color: #D32F2F; /* Rojo intenso */
-    color: #1B1B1B; /* Texto carbón */
+    background-color: #D32F2F;
+    /* Rojo intenso */
+    color: #1B1B1B;
+    /* Texto carbón */
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
     margin-top: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #B71C1C; /* Rojo más oscuro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #B71C1C;
+    /* Rojo más oscuro */
+    color: #FFFFFF;
+    /* Texto blanco */
 }
 
 .lineagordita {
     border: 0;
     height: 3px;
-    background: linear-gradient(to right, #D32F2F, #FF6F00, #D32F2F); /* Gradiente rojo a naranja */
+    background: linear-gradient(to right, #D32F2F, #FF6F00, #D32F2F);
+    /* Gradiente rojo a naranja */
     margin: 10px 0;
 }
 
@@ -177,7 +202,7 @@ p {
     text-align: center;
     padding: 30px;
     margin: 20px;
-    
+
 }
 
 .eldivdeltano {
@@ -200,12 +225,14 @@ p {
 
 .eventos-grid a {
     text-decoration: none;
-    color: #E0E0E0; /* Texto blanco humo */
+    color: #E0E0E0;
+    /* Texto blanco humo */
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #1B1B1B; /* Fondo oscuro */
+    background-color: #1B1B1B;
+    /* Fondo oscuro */
 }
 
 .eventos-grid a:hover {
@@ -223,12 +250,14 @@ p {
 .eventos-grid h3 {
     margin: 10px;
     font-size: 1.2rem;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
     text-align: center;
 }
 
 .eventos-grid h3:hover {
-    color: #FFD700; /* Dorado para hover */
+    color: #FFD700;
+    /* Dorado para hover */
 }
 
 .productos {
@@ -236,19 +265,23 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #333; /* Gris oscuro */
+    background-color: #333;
+    /* Gris oscuro */
 }
 
 .productos div {
-    border: 2px solid #B8860B; /* Dorado oscuro */
+    border: 2px solid #B8860B;
+    /* Dorado oscuro */
     margin: 20px;
     text-align: center;
-    background-color: rgba(27, 27, 27, 0.75); /* Fondo carbón semi-transparente */
+    background-color: rgba(27, 27, 27, 0.75);
+    /* Fondo carbón semi-transparente */
 }
 
 .productos div h3 {
     text-align: center;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
     margin: 10px 0;
 }
 
@@ -261,7 +294,8 @@ p {
 
 .productos a {
     text-decoration: none;
-    color: #E0E0E0; /* Texto blanco humo */
+    color: #E0E0E0;
+    /* Texto blanco humo */
     background-color: orange;
     padding: 10px;
     margin: 20px;
@@ -271,18 +305,19 @@ p {
 
 .titulo-de-productos h2 {
     text-align: center;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
     font-size: 3.5vh;
 }
 
 
-.conteiner-who-we-are  {
+.conteiner-who-we-are {
     position: relative;
     padding: 30px;
     background-color: #444;
 }
 
-.conteiner-who-we-are p{
+.conteiner-who-we-are p {
     font-size: 2vh
 }
 
@@ -304,8 +339,9 @@ p {
     font-size: 3vh;
 }
 
-.quienes-somos h5{
-    color: #FF6F00; /* Naranja cálido */
+.quienes-somos h5 {
+    color: #FF6F00;
+    /* Naranja cálido */
     font-size: 2vh;
 }
 
@@ -327,8 +363,9 @@ p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
     background: #202020;
     margin-bottom: 0;
-    
+
 }
+
 .nuestra-mision {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
     background: #202020;
@@ -356,10 +393,10 @@ p {
 
 
 .nuestro-equipo-simple {
-        margin: 10px 0 0 0;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .img-muchachos {
@@ -409,17 +446,21 @@ p {
 }
 
 
-.teams{
+.teams {
     padding: 2vh;
     margin: auto;
     border: 2px solid #ff9117;
 }
 
-.teams h1, h2, h3, p{
+.teams h1,
+h2,
+h3,
+p {
     text-align: start;
 }
 
-.teams h4, p{
+.teams h4,
+p {
     font-size: large;
 }
 
@@ -427,14 +468,15 @@ p {
     background-color: #555;
     text-align: center;
     margin: auto;
-    padding: 20px; 
+    padding: 20px;
 }
+
 .titulo-grid {
     text-align: center;
     margin: auto;
     padding: 5px;
     background-color: #B71C1C;
-    color: white; 
+    color: white;
 }
 
 .clases {
@@ -456,7 +498,7 @@ p {
     margin-left: 10px;
 }
 
-.join-action{
+.join-action {
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -470,21 +512,25 @@ p {
 
 #contactarme {
     padding: 2em;
-    background-color: #1B1B1B; /* Fondo carbón */
-    color: #E0E0E0; /* Texto blanco humo */
+    background-color: #1B1B1B;
+    /* Fondo carbón */
+    color: #E0E0E0;
+    /* Texto blanco humo */
     text-align: center;
 }
 
 #contactarme h2 {
     font-size: 2rem;
     margin-bottom: 1em;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
 }
 
 #contactarme form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #333; /* Gris oscuro */
+    background-color: #333;
+    /* Gris oscuro */
     padding: 2em;
     border-radius: 10px;
 }
@@ -497,7 +543,8 @@ p {
     display: block;
     font-weight: 500;
     margin-bottom: 0.5em;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
 }
 
 #contactarme input[type="text"],
@@ -505,7 +552,8 @@ p {
 #contactarme textarea {
     width: 100%;
     padding: 0.5em;
-    border: 1px solid #B8860B; /* Dorado oscuro */
+    border: 1px solid #B8860B;
+    /* Dorado oscuro */
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 1rem;
@@ -514,23 +562,27 @@ p {
 #contactarme input[type="text"]:focus,
 #contactarme input[type="email"]:focus,
 #contactarme textarea:focus {
-    border-color: #FF6F00; /* Naranja cálido */
+    border-color: #FF6F00;
+    /* Naranja cálido */
     outline: none;
 }
 
 #contactarme button[type="submit"] {
-    background-color: #D32F2F; /* Rojo intenso */
+    background-color: #D32F2F;
+    /* Rojo intenso */
     border: none;
     padding: 0.75em 1.5em;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    color: #1B1B1B; /* Texto carbón */
+    color: #1B1B1B;
+    /* Texto carbón */
 }
 
 #contactarme button[type="submit"]:hover {
-    background-color: #FF6F00; /* Naranja cálido */
+    background-color: #FF6F00;
+    /* Naranja cálido */
 }
 
 /*! FOOTER */
@@ -573,7 +625,8 @@ footer {
 .footer-column h4 {
     margin-bottom: 1em;
     font-size: 1.2em;
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
 }
 
 .footer-column ul {
@@ -586,7 +639,8 @@ footer {
 }
 
 .footer-column a {
-    color: #E0E0E0; /* Blanco humo */
+    color: #E0E0E0;
+    /* Blanco humo */
     text-decoration: none;
     display: block;
     margin-bottom: 0.5em;
@@ -594,7 +648,8 @@ footer {
 }
 
 .footer-column a:hover {
-    color: #FF6F00; /* Naranja cálido */
+    color: #FF6F00;
+    /* Naranja cálido */
 }
 
 .footer-column img {
@@ -607,6 +662,11 @@ footer {
     text-align: center;
     margin-top: 2em;
     padding-top: 1em;
-    border-top: 1px solid #444; /* Gris oscuro */
-    color: #BDBDBD; /* Gris claro */
+    border-top: 1px solid #444;
+    /* Gris oscuro */
+    color: #BDBDBD;
+    /* Gris claro */
 }
+
+
+/*! Media queries */
