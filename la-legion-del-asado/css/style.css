@@ -409,10 +409,18 @@ p {
 }
 
 
-.teams-titulo h1, p, h2, h3{
-    text-align: center;
+.teams{
     padding: 2vh;
     margin: auto;
+    border: 2px solid #ff9117;
+}
+
+.teams h1, h2, h3, p{
+    text-align: start;
+}
+
+.teams h4, p{
+    font-size: large;
 }
 
 .grid-conteiner-teams {
