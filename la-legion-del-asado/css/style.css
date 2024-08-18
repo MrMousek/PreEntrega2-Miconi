@@ -409,6 +409,12 @@ p {
 }
 
 
+.teams-titulo h1, p, h2, h3{
+    text-align: center;
+    padding: 2vh;
+    margin: auto;
+}
+
 .grid-conteiner-teams {
     background-color: #555;
     text-align: center;
@@ -424,22 +430,22 @@ p {
 }
 
 .clases {
-    display: flex;
+    display: grid;
     align-items: center;
     color: #999;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 10px;
+    padding: 2px 2px;
     background-color: #444;
-    margin: 20px;
+    margin: 10px;
 }
 
 .clases img {
     width: 30px;
     height: auto;
-    margin-left: 10px; /* Espacio entre el texto y la imagen */
+    margin-left: 10px;
 }
 
 .join-action{
@@ -449,6 +455,7 @@ p {
     color: #ff9117;
     border: 1px solid #ff9117;
 }
+
 
 
 /*! FORMULARIOS */
@@ -525,6 +532,7 @@ footer {
     padding: 1%;
 }
 
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -538,6 +546,11 @@ footer {
 .footer-logo {
     flex: 1;
 }
+
+.footer-logo h3 {
+    text-align: center;
+}
+
 
 .footer-sections {
     display: flex;
