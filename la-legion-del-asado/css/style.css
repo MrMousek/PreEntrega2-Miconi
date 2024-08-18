@@ -199,9 +199,10 @@ p {
 }
 
 .eventos h2 {
+    background-color: rgb(0 0 0);
     text-align: center;
-    padding: 30px;
-    margin: 20px;
+    padding: 10px;
+    margin: 0;
 
 }
 
@@ -265,7 +266,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #333;
+    background-color: #1B1B1B
     /* Gris oscuro */
 }
 
@@ -303,12 +304,50 @@ p {
     display: inline-block;
 }
 
+
+.quiero-mas {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    width: auto;
+}
+
+.cta-button-mas {
+    background-color: orange;
+    /* Rojo intenso */
+    color: #1B1B1B;
+    /* Texto carbón */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button-mas:hover {
+    background-color: #ffffff;
+    /* Rojo más oscuro */
+    color: #000000;
+    /* Texto blanco */
+}
+
 .titulo-de-productos h2 {
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: rgb(0 0 0);
     text-align: center;
-    color: #FF6F00;
-    /* Naranja cálido */
-    font-size: 3.5vh;
+    padding: 10px;
+    margin: 0;
+}
+
+.shop-titulo {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.shop-titulo p{
+    text-align: center;
 }
 
 
@@ -766,7 +805,7 @@ footer {
     .container-fluid {
         display: flex;
         justify-items: center;
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 
 }
