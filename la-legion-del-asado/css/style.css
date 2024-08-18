@@ -275,17 +275,48 @@ p {
     font-size: 3.5vh;
 }
 
+
+.conteiner-who-we-are  {
+    position: relative;
+    padding: 30px;
+    background-color: #444;
+}
+
+.borde-quienes-somos {
+    margin-top: 25px;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    background: #202020;
+    margin-bottom: 0;
+    border: 2px solid #ff9117;
+}
+
 .quienes-somos {
-    text-align: center;
+    text-align: left;
+}
+
+.quienes-somos h1 {
+    font-size: 3vh;
 }
 
 .quienes-somos h5{
     color: #FF6F00; /* Naranja cálido */
+    font-size: 2vh;
+}
+
+.quienes-somos p {
+    font-size: 1.7vh;
+}
+
+.quienes-somos .ww {
+    text-decoration: underline;
+    color: #B8860B;
 }
 
 .quienes-somos img {
-    width: 500px;
-    height: 300px;
+    width: 25%;
+    height: auto;
 }
 
 .nuestra-mision {
@@ -298,8 +329,8 @@ p {
     
 }
 .nuestra-mision {
-    background: none;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    background: #202020;
     border: 2px solid #ff9117;
 }
 
@@ -310,7 +341,37 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    font-size: 1.7vh
 }
+
+.nuestro-equipo {
+    margin-top: 25px;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    background: #202020;
+    margin-bottom: 0;
+    border: 2px solid #ff9117;
+}
+
+.nuestro-equipo p {
+    font-size: 1.7vh
+}
+
+.nuestro-equipo-simple {
+        margin: 10px 0 0 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.img-muchachos {
+    display: block;
+    max-width: 12vh;
+    height: auto;
+    border-radius: 15;
+}
+
 
 
 /*! FORMULARIOS */
