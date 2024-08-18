@@ -282,6 +282,10 @@ p {
     background-color: #444;
 }
 
+.conteiner-who-we-are p{
+    font-size: 2vh
+}
+
 .borde-quienes-somos {
     margin-top: 25px;
     padding: 40px;
@@ -305,9 +309,6 @@ p {
     font-size: 2vh;
 }
 
-.quienes-somos p {
-    font-size: 1.7vh;
-}
 
 .quienes-somos .ww {
     text-decoration: underline;
@@ -341,7 +342,6 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-    font-size: 1.7vh
 }
 
 .nuestro-equipo {
@@ -354,9 +354,6 @@ p {
     border: 2px solid #ff9117;
 }
 
-.nuestro-equipo p {
-    font-size: 1.7vh
-}
 
 .nuestro-equipo-simple {
         margin: 10px 0 0 0;
@@ -367,10 +364,51 @@ p {
 
 .img-muchachos {
     display: block;
-    max-width: 12vh;
+    padding: 3px;
+    max-width: 8vh;
     height: auto;
-    border-radius: 15;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+
+.titulo-fundador {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    color: #ff9117;
+}
+
+.fundador .muchachos-avatar {
+    position: relative;
+    overflow: hidden;
+    width: 64px;
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.fundador {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fundador {
+    margin-top: 25px;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    background: #202020;
+    margin-bottom: 0;
+    border: 2px solid #ff9117;
+}
+
+
 
 
 
