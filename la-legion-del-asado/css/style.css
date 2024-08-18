@@ -288,6 +288,21 @@ p {
     height: 300px;
 }
 
+.nuestra-mision {
+    margin-top: 25px;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    background: #202020;
+    margin-bottom: 0;
+    
+}
+.nuestra-mision {
+    background: none;
+    box-shadow: none;
+    border: 2px solid #ff9117;
+}
+
 .nuestra-mision p {
     display: block;
     margin-block-start: 1em;
@@ -297,14 +312,6 @@ p {
     unicode-bidi: isolate;
 }
 
-.who-we-are-section {
-    margin-top: 25px;
-    padding: 40px;
-    border-radius: 3px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-    background: #202020;
-    margin-bottom: 0;
-}
 
 /*! FORMULARIOS */
 
