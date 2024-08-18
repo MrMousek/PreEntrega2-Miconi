@@ -5,9 +5,8 @@
 body {
     font-family: "Roboto Condensed", 'Trebuchet MS', 'Tahoma', sans-serif;
     background-color: #1B1B1B;
-    /* Fondo negro carbón */
+    overflow-x: hidden;
     color: #E0E0E0;
-    /* Blanco humo para texto principal */
 }
 
 * {
@@ -60,6 +59,7 @@ header h4 {
     padding: 0.75rem 1rem;
     display: flex;
 }
+
 
 .navbar-nav .nav-link.show {
     color: #f5f5dc;
@@ -141,7 +141,7 @@ header h4 {
 /*! MAIN !*/
 
 main {
-    padding: 2em;
+    padding: 0;
     background-color: #1B1B1B;
 }
 
@@ -214,14 +214,14 @@ p {
     width: 100%;
 }
 
-/* .eventos-grid {
+.eventos-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 5px;
     width: 100%;
-} */
+}
 
 .eventos-grid a {
     text-decoration: none;
@@ -304,6 +304,7 @@ p {
 }
 
 .titulo-de-productos h2 {
+    background-color: rgba(0, 0, 0, 0.192);
     text-align: center;
     color: #FF6F00;
     /* Naranja cálido */
@@ -313,13 +314,22 @@ p {
 
 .conteiner-who-we-are {
     position: relative;
-    padding: 30px;
+    padding: auto;
     background-color: #444;
 }
+
+.conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+
 
 .conteiner-who-we-are p {
     font-size: 2vh
 }
+
 
 .borde-quienes-somos {
     margin-top: 25px;
@@ -330,6 +340,20 @@ p {
     margin-bottom: 0;
     border: 2px solid #ff9117;
 }
+
+.glorys {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .quienessomos- .glorys {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+} */
 
 .quienes-somos {
     text-align: left;
@@ -658,7 +682,7 @@ footer {
     margin-right: 8px;
 }
 
-.footer-bottom {
+.footer-bottom p {
     text-align: center;
     margin-top: 2em;
     padding-top: 1em;
@@ -670,3 +694,79 @@ footer {
 
 
 /*! Media queries */
+
+@media (max-width: 767px) {
+    .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
+        width: 200px;
+        height: auto;
+        padding: 10px;
+    }
+
+}
+
+/* NAV BAR QUERIES */
+
+@media (max-width: 767px) {
+    .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
+        width: 200px;
+        height: auto;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color: #333;
+        width: 100%; /* Asegura que el header ocupe todo el ancho */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        width: 100%; /* Asegura que la barra de navegación también ocupe todo el ancho */
+    }
+    
+    .container-fluid {
+        padding: 0; /* Elimina cualquier padding que pueda causar espacios no deseados */
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        background-color: #333;
+        width: auto; /* Asegura que el header ocupe todo el ancho */
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 570px) {
+    .eventos-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+    .hero .hero-content p{
+        text-align: center;
+    }
+
+    .logo-no-broken {
+        display: inline;
+        justify-content: center;
+    }
+    
+    .container-fluid {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+}
