@@ -355,9 +355,12 @@ p {
 }
 
 .glorys {
-    display: flex;
-    gap: 10px; 
     justify-content: center;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .glorys img {
@@ -372,9 +375,11 @@ p {
 }
 
 .glorys .glorys img:hover,
+
+
 .glorys img:active {
-    transform: scale(1.5); 
-    z-index: 10; 
+    transform: scale(1.5);
+    z-index: 10;
 }
 
 
@@ -393,12 +398,12 @@ p {
     border: 2px solid #ff9117;
 }
 
-.glorys {
+/* .glorys {
     margin: 10px 0 0 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 /* .quienessomos- .glorys {
     margin: 20px;
