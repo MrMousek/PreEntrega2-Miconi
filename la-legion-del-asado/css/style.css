@@ -69,11 +69,8 @@ header h4 {
 
 .navbar a {
     color: #f5f5dc;
-    /* Texto claro */
     font-weight: 600;
-    /* Texto un poco más grueso */
     text-transform: uppercase;
-    /* Mayúsculas para darle más presencia */
     transition: color 0.3s ease;
 }
 
@@ -352,9 +349,8 @@ p {
 
 
 .conteiner-who-we-are {
-    position: relative;
     padding: auto;
-    background-color: #444;
+    margin: 20px;
 }
 
 .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
@@ -375,7 +371,7 @@ p {
     padding: 40px;
     border-radius: 3px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
-    background: #202020;
+    background: #00000045;
     margin-bottom: 0;
     border: 2px solid #ff9117;
 }
