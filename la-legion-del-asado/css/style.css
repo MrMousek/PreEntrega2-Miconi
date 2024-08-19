@@ -145,6 +145,7 @@ main {
 .hero {
     background: url('../img/hero-img.jpg') no-repeat center center/cover;
     height: calc(100vh - 140px);
+    margin: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,12 +354,28 @@ p {
     margin: 20px;
 }
 
-.conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
-    width: 300px;
-    height: auto;
-    padding: 10px;
+.glorys {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
 }
 
+.glorys img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.glorys img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.glorys .glorys img:hover,
+.glorys img:active {
+    transform: scale(1.5); 
+    z-index: 10; 
+}
 
 
 .conteiner-who-we-are p {
@@ -670,7 +687,7 @@ p {
 }
 
 #contactarme button[type="submit"] {
-    background-color:  #FF6F00;
+    background-color: #FF6F00;
     border: none;
     margin-top: 5em;
     padding: 0.75em 1.5em;
