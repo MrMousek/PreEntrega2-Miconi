@@ -348,12 +348,6 @@ p {
     text-align: center;
 }
 
-
-.conteiner-who-we-are {
-    padding: auto;
-    margin: 20px;
-}
-
 .glorys {
     justify-content: center;
     gap: 10px;
@@ -382,14 +376,8 @@ p {
     z-index: 10;
 }
 
-
-.conteiner-who-we-are p {
-    font-size: 2vh
-}
-
-
 .borde-quienes-somos {
-    margin-top: 25px;
+    margin: 25px;
     padding: 40px;
     border-radius: 3px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
@@ -545,10 +533,20 @@ p {
     font-size: large;
 }
 
+
+.conteiner-who-we-are {
+    padding: auto;
+    margin: 20px;
+}
+
+.conteiner-who-we-are p {
+    font-size: 2vh
+}
+
 .grid-conteiner-teams {
     background-color: #555;
     text-align: center;
-    margin: auto;
+    margin: 20px;
     padding: 20px;
 }
 
