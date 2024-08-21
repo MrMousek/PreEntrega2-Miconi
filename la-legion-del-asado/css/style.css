@@ -803,7 +803,7 @@ footer {
 
 /* NAV BAR QUERIES */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
         width: 200px;
         height: auto;
@@ -816,19 +816,18 @@ footer {
     header {
         background-color: #333;
         width: 100%;
-        /* Asegura que el header ocupe todo el ancho */
         margin: 0;
         padding: 0;
     }
 
     .navbar {
         width: 100%;
-        /* Asegura que la barra de navegación también ocupe todo el ancho */
+
     }
 
     .container-fluid {
         padding: 0;
-        /* Elimina cualquier padding que pueda causar espacios no deseados */
+
     }
 }
 
@@ -842,15 +841,41 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 350px) and (max-width: 770px) {
     header {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 }
 
-@media (max-width: 570px) {
+/* @media (min-width: 576px) and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar {
+        background-color: #333;
+        padding: 0.75rem 1rem;
+        display: flex;
+        }
+} */
+
+
+@media (min-width: 350px) and (max-width: 770px) {
+
+    header h4 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        flex: 1;
+        color: #ffffff;
+    }
+
     .eventos-grid img {
         width: 100%;
         height: auto;
@@ -872,25 +897,48 @@ footer {
         justify-items: center;
         flex-direction: row-reverse;
     }
+}
 
-    @media (max-width: 576px) {
-        .nuestro-goal video {
-            width: 400px;
-            height: auto;
-        }
+/* @media (min-width: 577px) and (max-width: 768px) {
+    .eventos-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        display: block;
     }
 
-    @media (max-width: 450px) {
-        .nuestro-goal video {
-            width: 350px;
-            height: auto;
-        }
+    .hero .hero-content p {
+        text-align: center;
     }
 
-    @media (max-width: 400px) {
-        .nuestro-goal video {
-            width: 280px;
-            height: auto;
-        }
+    .logo-no-broken {
+        display: inline;
+        justify-content: center;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
+    } */
+
+@media (max-width: 576px) {
+    .nuestro-goal video {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .nuestro-goal video {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .nuestro-goal video {
+        width: 280px;
+        height: auto;
     }
 }
