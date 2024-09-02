@@ -14,95 +14,69 @@ body {
 
 header {
   background-color: #333;
-  /* Gris oscuro */
   padding: 20px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  header img {
+    width: 150px;
+    height: auto; }
 
-.logo img {
-  width: 15vh;
-  height: 15vh; }
-
-header h1 {
+h1,
+h4 {
   text-align: center;
   margin: 0;
   padding: 0;
+  flex: 1; }
+
+h1 {
   font-size: 3rem;
-  flex: 1;
-  color: #FF6F00;
-  /* Naranja cálido */ }
+  color: #FF6F00; }
 
-header h4 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+h4 {
   font-size: 1.5rem;
-  flex: 1;
   color: #ffffff; }
 
 .navbar {
   background-color: #333;
   padding: 0.75rem 1rem;
   display: flex; }
-
-.navbar-nav .nav-link.show {
-  color: #f5f5dc;
-  /* Texto claro */ }
-
-.navbar a {
-  color: #f5f5dc;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: color 0.3s ease; }
-
-.navbar a:hover {
-  color: #e28743;
-  /* Cambia a un tono naranja al pasar el mouse */ }
-
-.navbar-brand {
-  font-size: 1.5rem;
-  color: #ffaf1a;
-  /* Color distintivo para la marca */ }
-
-.navbar-brand img {
-  width: auto;
-  height: 10vh;
-  margin-left: 30px; }
-
-.navbar-toggler {
-  border-color: #e28743; }
-
-.navbar-toggler-icon {
-  filter: brightness(0) invert(1);
-  /* Icono de hamburguesa claro */ }
-
-.navbar-nav .nav-link.active {
-  color: #ffaf1a;
-  /* Resalta la opción activa */
-  font-weight: bold; }
+  .navbar .navbar-nav .nav-link {
+    color: #f5f5dc;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease; }
+    .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .nav-link.active {
+      color: #ffaf1a;
+      font-weight: bold; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: #e28743; }
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffaf1a; }
+    .navbar .navbar-brand img {
+      width: auto;
+      height: 10vh;
+      margin-left: 30px; }
+  .navbar .navbar-toggler {
+    border-color: #e28743; }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      filter: brightness(0) invert(1); }
 
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
-  background-color: #444;
-  /* Gris más oscuro */ }
+  background-color: #444; }
 
 .btn-outline-success {
   --bs-btn-color: #FF6F00;
-  /* Naranja cálido */
   --bs-btn-border-color: #000000;
-  /* Rojo intenso */
   --bs-btn-hover-color: #1B1B1B;
-  /* Fondo carbón al pasar */
   --bs-btn-hover-bg: #FF6F00;
-  /* Naranja cálido */
   --bs-btn-hover-border-color: #FF6F00;
   --bs-btn-focus-shadow-rgb: 255, 111, 0;
-  /* Sombra naranja */
   --bs-btn-active-color: #1B1B1B;
   --bs-btn-active-bg: #D32F2F;
-  /* Rojo intenso */
   --bs-btn-active-border-color: #D32F2F; }
 
 .dropdown-menu {
