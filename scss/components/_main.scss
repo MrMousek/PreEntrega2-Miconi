@@ -6,9 +6,10 @@ main {
         background: url('../img/hero-img.jpg') no-repeat center center/cover;
         height: calc(100vh - 140px);
         margin: 2vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex(flex, center, center);
         text-align: center;
         color: $text-color-light;
 
@@ -58,8 +59,9 @@ main {
     }
 
     &-grid {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        @include flex(flex, center, center);
         flex-wrap: wrap;
         gap: 20px;
         padding: 5px;
@@ -102,9 +104,10 @@ main {
 
 // Products Section
 .productos {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     flex-wrap: wrap;
+    @include flex(flex, center, wrap);
     padding: 20px;
     background-color: $background-color-dark;
 
@@ -141,8 +144,9 @@ main {
 
 // Miscellaneous Buttons
 .quiero-mas {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include flex(flex, center, center);
     padding: 10px;
     margin: 20px;
     width: auto;
@@ -166,11 +170,12 @@ main {
 
 // Glory Section
 .glorys {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include flex(flex, center, center);
     gap: 10px;
     margin: 10px 0 0;
-    align-items: center;
+    // align-items: center;
     flex-wrap: wrap;
 
     img {
@@ -193,7 +198,7 @@ main {
     padding: 40px;
     border-radius: 3px;
     box-shadow: $box-shadow-dark;
-    background: rgba(0, 0, 0, 0.45);
+    background: #222;
     border: 2px solid $border-color;
 }
 
@@ -204,8 +209,8 @@ main {
         padding: 10px;
         margin: 10px;
         text-decoration: none;
-        color: $primary-color;
-        border: 1px solid $primary-color;
+        color: $orange-warm;
+        border: 1px solid $orange-warm;
         border-radius: 15px;
     }
 }
@@ -250,9 +255,9 @@ main {
     padding: $padding;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    background: $secondary-color;
+    background: $background-color-dark;
     margin-bottom: 0;
-    border: 2px solid $primary-color;
+    border: 2px solid $orange-warm;
 
     p {
         display: block;
@@ -263,9 +268,10 @@ main {
 
 .nuestro-equipo-simple {
     margin: 10px 0 0;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     flex-wrap: wrap;
+    @include flex(flex, none, center);
 }
 
 .img-muchachos {
@@ -282,7 +288,7 @@ main {
     text-transform: uppercase;
     font-size: 30px;
     margin: 0;
-    color: $primary-color;
+    color: $orange-warm;
 }
 
 .fundador {
@@ -296,15 +302,16 @@ main {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @include flex(flex, none, center);
     margin-bottom: 15px;
 }
 
 .teams {
     padding: 2vh;
     margin: auto;
-    border: 2px solid $primary-color;
+    border: 2px solid $orange-warm;
 
     
     h2,
@@ -344,9 +351,6 @@ main {
 }
 
 .clases {
-    display: grid;
-    align-items: center;
-    color: $text-color;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -408,29 +412,31 @@ main {
     margin: auto;
     width: auto;
     height: auto;
-    background-color: #1B1B1B;
-    color: #E0E0E0;
+    background-color: $background-color-dark;
+    color: $text-color;
     text-align: left;
-    display: inline-block;
-    justify-content: start;
+    @include flex(flex, start, center);
+    // display: inline-block;
+    // justify-content: start;
 
     h2 {
         font-size: 2rem;
         margin-bottom: 1em;
-        color: #FF6F00; // Naranja cálido
+        color: $orange-warm; // Naranja cálido
     }
 
     form {
-        display: flex;
-        justify-content: space-evenly;
+        // display: flex;
+        // justify-content: space-evenly;
+        // align-items: start;
+        @include flex(flex, space-evenly, start);
+        flex-wrap: wrap;
         padding: 20px;
         margin: 20px;
         gap: 20px;
-        flex-wrap: wrap;
-        align-items: start;
         width: auto;
         height: auto;
-        background-color: #333;
+        background-color: $background-color;
 
         div {
             margin-bottom: 1em;
@@ -440,7 +446,7 @@ main {
             display: block;
             font-weight: 500;
             margin-bottom: 0.5em;
-            color: #FF6F00;
+            color: $orange-warm;
         }
 
         input[type="text"],
@@ -454,13 +460,13 @@ main {
             font-size: 1rem;
 
             &:focus {
-                border-color: #FF6F00; // Naranja cálido
+                border-color: $orange-warm; // Naranja cálido
                 outline: none;
             }
         }
 
         button[type="submit"] {
-            background-color: #FF6F00;
+            background-color: $orange-warm;
             border: none;
             margin-top: 5em;
             padding: 0.75em 1.5em;
@@ -471,7 +477,7 @@ main {
             color: #1B1B1B;
 
             &:hover {
-                background-color: #ac6736; // Naranja cálido
+                background-color: $border-color 
             }
         }
     }
@@ -497,9 +503,10 @@ main {
     grid-auto-rows: 1fr;
 
     div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flex(flex, center, center);
         overflow: hidden;
         padding: 2px;
         aspect-ratio: 1 / 1;

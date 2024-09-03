@@ -1,5 +1,5 @@
 header {
-    background-color: #333; // Gris oscuro
+    background-color: $background-color; // Gris oscuro
     padding: 20px;
     margin: auto;
     display: flex;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .navbar {
-    background-color: $background-color-dark;
+    background-color: $background-color;
     padding: 0.75rem 1rem;
     display: flex;
 
@@ -38,12 +38,12 @@ h1 {
 
             &.show,
             &.active {
-                color: $primary-color; // Color distintivo para la marca
+                color: $orange-warm; // Color distintivo para la marca
                 font-weight: bold;
             }
 
             &:hover {
-                color: #e28743; // Cambia a un tono naranja al pasar el mouse
+                color: $orange-warm; // Cambia a un tono naranja al pasar el mouse
             }
         }
     }
@@ -60,7 +60,7 @@ h1 {
     }
 
     .navbar-toggler {
-        border-color: #e28743;
+        border-color: $orange-warm;
 
         .navbar-toggler-icon {
             filter: brightness(0) invert(1); // Icono de hamburguesa claro
@@ -70,20 +70,9 @@ h1 {
 
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
-    background-color: #444; // Gris más oscuro
+    background-color: $background-color // Gris más oscuro
 }
 
-.btn-outline-success {
-    --bs-btn-color: #FF6F00; // Naranja cálido
-    --bs-btn-border-color: #000000; // Rojo intenso
-    --bs-btn-hover-color: #1B1B1B; // Fondo carbón al pasar
-    --bs-btn-hover-bg: #FF6F00; // Naranja cálido
-    --bs-btn-hover-border-color: #FF6F00;
-    --bs-btn-focus-shadow-rgb: 255, 111, 0; // Sombra naranja
-    --bs-btn-active-color: #1B1B1B;
-    --bs-btn-active-bg: #D32F2F; // Rojo intenso
-    --bs-btn-active-border-color: #D32F2F;
-}
 
 .dropdown-menu {
     --bs-dropdown-bg: #333;
