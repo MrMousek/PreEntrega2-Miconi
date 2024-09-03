@@ -38,7 +38,8 @@ main {
     background-color: $cta-color;
     color: $background-color-dark;
     padding: 10px 20px;
-    text-decoration: none;
+    // text-decoration: none;
+    @extend %enlaces;
     font-size: 1.2rem;
     border-radius: $border-radius;
     margin-top: 20px;
@@ -68,7 +69,8 @@ main {
         width: 100%;
 
         a {
-            text-decoration: none;
+            // text-decoration: none;
+            @extend %enlaces;
             color: $text-color-light;
             display: block;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -131,7 +133,8 @@ main {
         }
 
         a {
-            text-decoration: none;
+            // text-decoration: none;
+            @extend %enlaces;
             border-radius: 15px;
             color: $text-color-light;
             background-color: $orange-warm;
@@ -155,7 +158,8 @@ main {
         background-color: $orange-warm;
         color: $background-color-dark;
         padding: 10px 20px;
-        text-decoration: none;
+        // text-decoration: none;
+        @extend %enlaces;
         font-size: 1.2rem;
         border-radius: $border-radius;
         margin-top: 20px;
@@ -208,7 +212,8 @@ main {
     .join-action {
         padding: 10px;
         margin: 10px;
-        text-decoration: none;
+        // text-decoration: none;
+        @extend %enlaces;
         color: $orange-warm;
         border: 1px solid $orange-warm;
         border-radius: 15px;
@@ -243,7 +248,8 @@ main {
         border: 2px solid $border-color;
         border-radius: 15px;
         color: $orange-warm;
-        text-decoration: none;
+        // text-decoration: none;
+        @extend %enlaces;
         text-align: center;
     }
 }

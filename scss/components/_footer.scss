@@ -38,6 +38,7 @@ footer {
 
                 a {
                     color: $text-color-light; // Blanco humo
+                    // text-decoration: none;
                     text-decoration: none;
                     transition: color 0.3s;
                     display: block;
@@ -63,7 +64,8 @@ footer {
 
                         a {
                             color: $text-color-light; 
-                            text-decoration: none;
+                            // text-decoration: none;
+                            @extend %enlaces;
                             display: block;
                             margin-bottom: 0.5em;
                             transition: color 0.3s;
