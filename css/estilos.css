@@ -20,7 +20,8 @@ header {
   justify-content: space-between; }
   header img {
     width: 150px;
-    height: auto; }
+    height: auto;
+    border-radius: 15px; }
 
 h1,
 h4 {
@@ -86,25 +87,26 @@ h4 {
 main {
   padding: 0;
   background-color: #1B1B1B; }
-
-.hero {
-  background: url("../img/hero-img.jpg") no-repeat center center/cover;
-  height: calc(100vh - 140px);
-  margin: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #E0E0E0; }
-  .hero .logo-no-broken {
-    width: 180px;
-    height: 100px; }
-  .hero .hero-content {
-    position: block; }
-    .hero .hero-content h1,
-    .hero .hero-content p {
-      font-size: 1.5rem;
-      margin: 10px 0 20px; }
+  main .hero {
+    background: url("../img/hero-img.jpg") no-repeat center center/cover;
+    height: calc(100vh - 140px);
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #E0E0E0; }
+    main .hero .logo-no-broken {
+      width: 180px;
+      height: 100px; }
+    main .hero .hero-content {
+      position: block; }
+      main .hero .hero-content h1,
+      main .hero .hero-content p {
+        font-size: 1.5rem;
+        margin: 10px 0 20px; }
+      main .hero .hero-content .heromain {
+        color: #E0E0E0; }
 
 .cta-button {
   background-color: #D32F2F;
@@ -118,12 +120,6 @@ main {
   .cta-button:hover {
     background-color: #B71C1C;
     color: #FFFFFF; }
-
-.lineagordita {
-  border: 0;
-  height: 3px;
-  background: linear-gradient(to right, #D32F2F, #FF6F00, #D32F2F);
-  margin: 10px 0; }
 
 .eventos h2 {
   background-color: black;

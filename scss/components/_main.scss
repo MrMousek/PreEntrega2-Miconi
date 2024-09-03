@@ -1,37 +1,38 @@
-// Main Section
 main {
     padding: 0;
     background-color: $background-color-dark;
-}
 
-// Hero Section
-.hero {
-    background: url('../img/hero-img.jpg') no-repeat center center/cover;
-    height: calc(100vh - 140px);
-    margin: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: $text-color-light;
+    .hero {
+        background: url('../img/hero-img.jpg') no-repeat center center/cover;
+        height: calc(100vh - 140px);
+        margin: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $text-color-light;
 
-    .logo-no-broken {
-        width: 180px;
-        height: 100px;
-    }
+        .logo-no-broken {
+            width: 180px;
+            height: 100px;
+        }
 
-    .hero-content {
-        position: block;
+        .hero-content {
+            position: block;
 
-        h1,
-        p {
-            font-size: 1.5rem;
-            margin: 10px 0 20px;
+            h1,
+            p {
+                font-size: 1.5rem;
+                margin: 10px 0 20px;
+            }
+
+            .heromain {
+                color: $text-color-light;
+            }
         }
     }
 }
 
-// Call to Action Button
 .cta-button {
     background-color: $cta-color;
     color: $background-color-dark;
@@ -48,15 +49,6 @@ main {
     }
 }
 
-// Line Gradient
-.lineagordita {
-    border: 0;
-    height: 3px;
-    background: linear-gradient(to right, $cta-color, $orange-warm, $cta-color);
-    margin: 10px 0;
-}
-
-// Events Section
 .eventos {
     h2 {
         background-color: black;
@@ -226,6 +218,7 @@ main {
         width: 25%;
         height: auto;
     }
+
     a {
         margin: 2px;
         padding: 5px;
@@ -482,6 +475,7 @@ main {
     text-align: center;
     padding: 10px;
     margin: 20px;
+
     h1 {
         font-size: 30px;
         padding: 20px;
@@ -489,11 +483,12 @@ main {
 }
 
 .galeria-guild {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 10px;
-        padding: 20px;
-        grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+    grid-auto-rows: 1fr;
+
     div {
         display: flex;
         align-items: center;
@@ -502,6 +497,7 @@ main {
         padding: 2px;
         aspect-ratio: 1 / 1;
     }
+
     img {
         width: 100%;
         height: 100%;
