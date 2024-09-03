@@ -23,6 +23,8 @@ footer {
 
             h3 {
                 text-align: center;
+                font-family: "Sedgwick Ave", cursive;
+                font-size: 1.5rem;
             }
         }
 
@@ -33,16 +35,18 @@ footer {
 
             .footer-column {
                 margin: 0 1em;
+
                 a {
                     color: #E0E0E0; // Blanco humo
                     text-decoration: none;
                     transition: color 0.3s;
                     display: block;
                 }
+
                 a:hover {
                     color: #FF6F00; // Naranja cálido
                 }
-                
+
 
                 h4 {
                     margin-bottom: 1em;

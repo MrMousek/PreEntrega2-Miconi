@@ -197,14 +197,27 @@ main {
     border: 2px solid $border-color;
 }
 
+.equipo-raid {
+    text-align: center;
+    
+    .join-action {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
+    }
+}
+
 .quienes-somos {
     text-align: left;
 
-    h1 {
+    h2 {
         font-size: 3vh;
     }
 
-    h5 {
+    h3 {
         color: $orange-warm;
         font-size: 2vh;
     }
@@ -293,7 +306,7 @@ main {
     margin: auto;
     border: 2px solid $primary-color;
 
-    h1,
+    
     h2,
     h3,
     p {
@@ -349,16 +362,9 @@ main {
     }
 }
 
-.join-action {
-    padding: 5px;
-    margin: 5px;
-    text-decoration: none;
-    color: $primary-color;
-    border: 1px solid $primary-color;
-    border-radius: 15px;
-}
 
-.titulo-unete h1 {
+
+.titulo-unete h2{
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -371,6 +377,7 @@ main {
     margin: 15px;
 
     h2,
+    h3,
     p {
         text-align: start;
         color: white;
@@ -476,7 +483,7 @@ main {
     padding: 10px;
     margin: 20px;
 
-    h1 {
+    h2 {
         font-size: 30px;
         padding: 20px;
     }

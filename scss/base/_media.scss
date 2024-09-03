@@ -1,14 +1,4 @@
-@media (max-width: 767px) {
-    .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
-        width: 200px;
-        height: auto;
-        padding: 10px;
-    }
-
-}
-
-/* NAV BAR QUERIES */
-
+/* Media Query para dispositivos pequeños (max-width: 768px) */
 @media (max-width: 768px) {
     .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
         width: 200px;
@@ -16,70 +6,22 @@
         padding: 10px;
     }
 
-}
-
-@media (max-width: 768px) {
     header {
         background-color: #333;
         width: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
+        z-index: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    .navbar {
-        width: 100%;
-
-    }
-
+        
+    .navbar,
     .container-fluid {
+        width: 100%;
         padding: 0;
-
-    }
-}
-
-@media (max-width: 500px) {
-    header {
-        background-color: #333;
-        width: auto;
-        /* Asegura que el header ocupe todo el ancho */
-        margin: 0;
-        padding: 0;
-    }
-}
-
-@media (min-width: 350px) and (max-width: 770px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-/* @media (min-width: 576px) and (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .navbar {
-        background-color: #333;
-        padding: 0.75rem 1rem;
-        display: flex;
-        }
-} */
-
-
-@media (min-width: 350px) and (max-width: 770px) {
-
-    header h4 {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        font-size: 1.5rem;
-        flex: 1;
-        color: #ffffff;
     }
 
     .eventos-grid img {
@@ -105,29 +47,7 @@
     }
 }
 
-/* @media (min-width: 577px) and (max-width: 768px) {
-    .eventos-grid img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px 10px 0 0;
-        display: block;
-    }
-
-    .hero .hero-content p {
-        text-align: center;
-    }
-
-    .logo-no-broken {
-        display: inline;
-        justify-content: center;
-    }
-
-    .container-fluid {
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    } */
-
+/* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
 @media (max-width: 576px) {
     .nuestro-goal video {
         width: 400px;
@@ -135,6 +55,7 @@
     }
 }
 
+/* Media Query para dispositivos pequeños (max-width: 450px) */
 @media (max-width: 450px) {
     .nuestro-goal video {
         width: 350px;
@@ -142,6 +63,7 @@
     }
 }
 
+/* Media Query para dispositivos muy pequeños (max-width: 400px) */
 @media (max-width: 400px) {
     .nuestro-goal video {
         width: 280px;

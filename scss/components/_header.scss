@@ -13,27 +13,19 @@ header {
     }
 }
 
-h1,
-h4 {
+
+h1 {
     text-align: center;
     margin: 0;
     padding: 0;
     flex: 1;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #FF6F00; // Naranja cálido
-}
-
-h4 {
     font-size: 1.5rem;
-    color: #ffffff;
+    font-family: "Sedgwick Ave", cursive;
+    color: $text-color-light;
 }
-
 
 .navbar {
-    background-color: #333;
+    background-color: $background-color-dark;
     padding: 0.75rem 1rem;
     display: flex;
 
@@ -46,7 +38,7 @@ h4 {
 
             &.show,
             &.active {
-                color: #ffaf1a; // Color distintivo para la marca
+                color: $primary-color; // Color distintivo para la marca
                 font-weight: bold;
             }
 

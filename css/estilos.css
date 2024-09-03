@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
 body {
   font-family: "Roboto Condensed", 'Trebuchet MS', 'Tahoma', sans-serif;
   background-color: #1B1B1B;
@@ -23,23 +25,17 @@ header {
     height: auto;
     border-radius: 15px; }
 
-h1,
-h4 {
+h1 {
   text-align: center;
   margin: 0;
   padding: 0;
-  flex: 1; }
-
-h1 {
-  font-size: 3rem;
-  color: #FF6F00; }
-
-h4 {
+  flex: 1;
   font-size: 1.5rem;
-  color: #ffffff; }
+  font-family: "Sedgwick Ave", cursive;
+  color: #E0E0E0; }
 
 .navbar {
-  background-color: #333;
+  background-color: #1B1B1B;
   padding: 0.75rem 1rem;
   display: flex; }
   .navbar .navbar-nav .nav-link {
@@ -48,7 +44,7 @@ h4 {
     text-transform: uppercase;
     transition: color 0.3s ease; }
     .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .nav-link.active {
-      color: #ffaf1a;
+      color: #ff9117;
       font-weight: bold; }
     .navbar .navbar-nav .nav-link:hover {
       color: #e28743; }
@@ -231,11 +227,21 @@ main {
   background: rgba(0, 0, 0, 0.45);
   border: 2px solid #ff9117; }
 
+.equipo-raid {
+  text-align: center; }
+  .equipo-raid .join-action {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #ff9117;
+    border: 1px solid #ff9117;
+    border-radius: 15px; }
+
 .quienes-somos {
   text-align: left; }
-  .quienes-somos h1 {
+  .quienes-somos h2 {
     font-size: 3vh; }
-  .quienes-somos h5 {
+  .quienes-somos h3 {
     color: #FF6F00;
     font-size: 2vh; }
   .quienes-somos .ww {
@@ -308,7 +314,6 @@ main {
   padding: 2vh;
   margin: auto;
   border: 2px solid #ff9117; }
-  .teams h1,
   .teams h2,
   .teams h3,
   .teams p {
@@ -352,15 +357,7 @@ main {
     height: auto;
     margin-left: 10px; }
 
-.join-action {
-  padding: 5px;
-  margin: 5px;
-  text-decoration: none;
-  color: #ff9117;
-  border: 1px solid #ff9117;
-  border-radius: 15px; }
-
-.titulo-unete h1 {
+.titulo-unete h2 {
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -371,6 +368,7 @@ main {
   padding: 20px;
   margin: 15px; }
   .nuestro-goal h2,
+  .nuestro-goal h3,
   .nuestro-goal p {
     text-align: start;
     color: white;
@@ -453,7 +451,7 @@ main {
   text-align: center;
   padding: 10px;
   margin: 20px; }
-  .shop-titulo h1 {
+  .shop-titulo h2 {
     font-size: 30px;
     padding: 20px; }
 
@@ -494,7 +492,9 @@ footer {
     footer .footer-container .footer-logo {
       flex: 1; }
       footer .footer-container .footer-logo h3 {
-        text-align: center; }
+        text-align: center;
+        font-family: "Sedgwick Ave", cursive;
+        font-size: 1.5rem; }
     footer .footer-container .footer-sections {
       display: flex;
       justify-content: space-between;
@@ -532,66 +532,26 @@ footer {
     border-top: 1px solid #444;
     color: #BDBDBD; }
 
-@media (max-width: 767px) {
-  .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
-    width: 200px;
-    height: auto;
-    padding: 10px; } }
-
-/* NAV BAR QUERIES */
+/* Media Query para dispositivos pequeños (max-width: 768px) */
 @media (max-width: 768px) {
   .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
     width: 200px;
     height: auto;
-    padding: 10px; } }
-
-@media (max-width: 768px) {
+    padding: 10px; }
   header {
     background-color: #333;
     width: 100%;
     margin: 0;
-    padding: 0; }
-  .navbar {
-    width: 100%; }
-  .container-fluid {
-    padding: 0; } }
-
-@media (max-width: 500px) {
-  header {
-    background-color: #333;
-    width: auto;
-    /* Asegura que el header ocupe todo el ancho */
-    margin: 0;
-    padding: 0; } }
-
-@media (min-width: 350px) and (max-width: 770px) {
-  header {
+    padding: 0;
     display: flex;
+    z-index: 0;
     flex-direction: column;
     align-items: center;
-    text-align: center; } }
-
-/* @media (min-width: 576px) and (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .navbar {
-        background-color: #333;
-        padding: 0.75rem 1rem;
-        display: flex;
-        }
-} */
-@media (min-width: 350px) and (max-width: 770px) {
-  header h4 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    flex: 1;
-    color: #ffffff; }
+    text-align: center; }
+  .navbar,
+  .container-fluid {
+    width: 100%;
+    padding: 0; }
   .eventos-grid img {
     width: 100%;
     height: auto;
@@ -607,38 +567,19 @@ footer {
     justify-items: center;
     flex-direction: row-reverse; } }
 
-/* @media (min-width: 577px) and (max-width: 768px) {
-    .eventos-grid img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px 10px 0 0;
-        display: block;
-    }
-
-    .hero .hero-content p {
-        text-align: center;
-    }
-
-    .logo-no-broken {
-        display: inline;
-        justify-content: center;
-    }
-
-    .container-fluid {
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    } */
+/* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
 @media (max-width: 576px) {
   .nuestro-goal video {
     width: 400px;
     height: auto; } }
 
+/* Media Query para dispositivos pequeños (max-width: 450px) */
 @media (max-width: 450px) {
   .nuestro-goal video {
     width: 350px;
     height: auto; } }
 
+/* Media Query para dispositivos muy pequeños (max-width: 400px) */
 @media (max-width: 400px) {
   .nuestro-goal video {
     width: 280px;
