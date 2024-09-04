@@ -26,8 +26,7 @@ h1 {
 
 .navbar {
     background-color: $background-color;
-    padding: 0.75rem 1rem;
-    display: flex;
+    padding: 0;
 
     .navbar-nav {
         .nav-link {
@@ -38,16 +37,27 @@ h1 {
 
             &.show,
             &.active {
-                color: $orange-warm; 
+                color: $orange-warm;
                 font-weight: bold;
             }
 
             &:hover {
                 color: $orange-warm; // Cambia a un tono naranja al pasar el mouse
             }
-        .dropdown-menu {
-            position: absolute;
-                }
+
+            .dropdown-menu {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-top: 0.5rem;
+                /* Ajusta según sea necesario */
+                z-index: 1000;
+                width: 100%;
+                background-color: #333;
+
+                border: none;
+                border-radius: 0;
+            }
         }
     }
 
@@ -68,6 +78,12 @@ h1 {
         .navbar-toggler-icon {
             filter: brightness(0) invert(1); // Icono de hamburguesa claro
         }
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-items: center;
+        flex-direction: row;
     }
 }
 
