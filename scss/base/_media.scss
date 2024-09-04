@@ -8,19 +8,25 @@
 
     header {
         background-color: $background-color;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        padding: 20px;
+        margin: auto;
         display: flex;
-        z-index: 0;
-        flex-direction: row;
         align-items: center;
-        text-align: center;
+        justify-content: space-between;
+        h1 { 
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            flex: 1;
+            font-size: 1.2rem;
+            font-family: "Sedgwick Ave", cursive;
+            color: $text-color-light;
+    
+        }
     }
 
     .navbar,
     .container-fluid {
-        width: 100%;
         padding: 0;
     }
 
@@ -46,16 +52,45 @@
         flex-direction: row-reverse;
     }
 
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1em;
+        flex-wrap: wrap;
+    }
+    
     footer .footer-logo {
         flex: 1;
-
         h3 {
             text-align: center;
             font-family: "Sedgwick Ave", cursive;
             font-size: 1.2rem;
         }
+    footer .footer-container .footer-sections .footer-column {
+            margin: 0 1em;
+        }
+    .footer-column a {
+            color: $text-color-light;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+        }
+        
     }
+    .galeria-guild {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 5px;
+        padding: 0;
+        margin: 5px;
+        grid-auto-rows: 1fr;
+    }
+    .nuestro-goal {
+        background-color: #222;
+        margin: auto;
+        
 }
+
 
 /* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
 @media screen and (max-width: 576px) {
@@ -79,4 +114,5 @@
         width: 280px;
         height: auto;
     }
+}
 }

@@ -106,9 +106,9 @@ main {
 
 // Products Section
 .productos {
-    // display: flex;
-    // justify-content: center;
-    @include flex(flex, center, none);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: $background-color-dark;
 
@@ -137,8 +137,8 @@ main {
             border-radius: 15px;
             color: $text-color-light;
             background-color: $orange-warm;
-            padding: 30px;
             margin: 20px;
+            padding: 10px;
             display: inline-block;
         }
     }
