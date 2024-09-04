@@ -1,5 +1,5 @@
 /* Media Query para dispositivos pequeños (max-width: 768px) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
         width: 200px;
         height: auto;
@@ -13,11 +13,11 @@
         padding: 0;
         display: flex;
         z-index: 0;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
-        
+
     .navbar,
     .container-fluid {
         width: 100%;
@@ -45,10 +45,20 @@
         justify-items: center;
         flex-direction: row-reverse;
     }
+
+    footer .footer-logo {
+        flex: 1;
+
+        h3 {
+            text-align: center;
+            font-family: "Sedgwick Ave", cursive;
+            font-size: 1.2rem;
+        }
+    }
 }
 
 /* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .nuestro-goal video {
         width: 400px;
         height: auto;
@@ -56,7 +66,7 @@
 }
 
 /* Media Query para dispositivos pequeños (max-width: 450px) */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .nuestro-goal video {
         width: 350px;
         height: auto;
@@ -64,7 +74,7 @@
 }
 
 /* Media Query para dispositivos muy pequeños (max-width: 400px) */
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .nuestro-goal video {
         width: 280px;
         height: auto;

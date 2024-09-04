@@ -108,15 +108,14 @@ main {
 .productos {
     // display: flex;
     // justify-content: center;
-    flex-wrap: wrap;
-    @include flex(flex, center, wrap);
+    @include flex(flex, center, none);
     padding: 20px;
     background-color: $background-color-dark;
 
     div {
         border: 2px solid darken($orange-warm, 10%);
         border-radius: 15px;
-        margin: 20px;
+        margin: 10px;
         text-align: center;
 
         h3 {
@@ -138,7 +137,7 @@ main {
             border-radius: 15px;
             color: $text-color-light;
             background-color: $orange-warm;
-            padding: 10px;
+            padding: 30px;
             margin: 20px;
             display: inline-block;
         }
@@ -208,7 +207,7 @@ main {
 
 .equipo-raid {
     text-align: center;
-    
+
     .join-action {
         padding: 10px;
         margin: 10px;
@@ -319,7 +318,7 @@ main {
     margin: auto;
     border: 2px solid $orange-warm;
 
-    
+
     h2,
     h3,
     p {
@@ -374,7 +373,7 @@ main {
 
 
 
-.titulo-unete h2{
+.titulo-unete h2 {
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -483,7 +482,7 @@ main {
             color: #1B1B1B;
 
             &:hover {
-                background-color: $border-color 
+                background-color: $border-color
             }
         }
     }
