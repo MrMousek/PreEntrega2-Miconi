@@ -45,6 +45,9 @@ h1 {
             &:hover {
                 color: $orange-warm; // Cambia a un tono naranja al pasar el mouse
             }
+        .dropdown-menu {
+            position: absolute;
+                }
         }
     }
 

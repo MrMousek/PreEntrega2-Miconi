@@ -1,4 +1,10 @@
 /* Media Query para dispositivos pequeños (max-width: 768px) */
+@media screen and (max-width: 1000px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
         width: 200px;
@@ -13,7 +19,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        h1 { 
+
+        h1 {
             text-align: center;
             margin: 0;
             padding: 20px;
@@ -21,7 +28,7 @@
             font-size: 1.2rem;
             font-family: "Sedgwick Ave", cursive;
             color: $text-color-light;
-    
+
         }
     }
 
@@ -58,25 +65,29 @@
         padding: 0 1em;
         flex-wrap: wrap;
     }
-    
+
     footer .footer-logo {
         flex: 1;
+
         h3 {
             text-align: center;
             font-family: "Sedgwick Ave", cursive;
             font-size: 1.2rem;
         }
-    footer .footer-container .footer-sections .footer-column {
+
+        footer .footer-container .footer-sections .footer-column {
             margin: 0 1em;
         }
-    .footer-column a {
+
+        .footer-column a {
             color: $text-color-light;
             text-decoration: none;
             transition: color 0.3s;
             display: flex;
         }
-        
+
     }
+
     .galeria-guild {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -85,34 +96,35 @@
         margin: 5px;
         grid-auto-rows: 1fr;
     }
+
     .nuestro-goal {
         background-color: #222;
         margin: auto;
-        
-}
 
-
-/* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
-@media screen and (max-width: 576px) {
-    .nuestro-goal video {
-        width: 400px;
-        height: auto;
     }
-}
 
-/* Media Query para dispositivos pequeños (max-width: 450px) */
-@media screen and (max-width: 450px) {
-    .nuestro-goal video {
-        width: 350px;
-        height: auto;
-    }
-}
 
-/* Media Query para dispositivos muy pequeños (max-width: 400px) */
-@media screen and (max-width: 400px) {
-    .nuestro-goal video {
-        width: 280px;
-        height: auto;
+    /* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
+    @media screen and (max-width: 576px) {
+        .nuestro-goal video {
+            width: 400px;
+            height: auto;
+        }
     }
-}
+
+    /* Media Query para dispositivos pequeños (max-width: 450px) */
+    @media screen and (max-width: 450px) {
+        .nuestro-goal video {
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    /* Media Query para dispositivos muy pequeños (max-width: 400px) */
+    @media screen and (max-width: 400px) {
+        .nuestro-goal video {
+            width: 280px;
+            height: auto;
+        }
+    }
 }
