@@ -39,9 +39,10 @@ footer {
                 a {
                     color: $text-color-light; // Blanco humo
                     // text-decoration: none;
-                    text-decoration: none;
+                    @extend %enlaces;
                     transition: color 0.3s;
                     display: flex;
+                    margin-bottom: 0.5em
                 }
 
                 a:hover {
@@ -52,6 +53,7 @@ footer {
                 h4 {
                     margin-bottom: 1em;
                     font-size: 1.2em;
+                    text-align: center;
                     color: $orange-warm; // Naranja cálido
                 }
 

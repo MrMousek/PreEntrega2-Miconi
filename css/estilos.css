@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
-.cta-button, .eventos-grid a, .productos div a, .quiero-mas .cta-button-mas, .equipo-raid .join-action, .quienes-somos a, footer .footer-container .footer-sections .footer-column ul li a {
+.cta-button, .eventos-grid a, .productos div a, .quiero-mas .cta-button-mas, .equipo-raid .join-action, .quienes-somos a, footer .footer-container .footer-sections .footer-column a, footer .footer-container .footer-sections .footer-column ul li a {
   text-decoration: none; }
 
 body {
@@ -491,14 +491,15 @@ footer {
         margin: 0 1em; }
         footer .footer-container .footer-sections .footer-column a {
           color: #E0E0E0;
-          text-decoration: none;
           transition: color 0.3s;
-          display: flex; }
+          display: flex;
+          margin-bottom: 0.5em; }
         footer .footer-container .footer-sections .footer-column a:hover {
           color: #FF6F00; }
         footer .footer-container .footer-sections .footer-column h4 {
           margin-bottom: 1em;
           font-size: 1.2em;
+          text-align: center;
           color: #FF6F00; }
         footer .footer-container .footer-sections .footer-column ul {
           list-style: none;
