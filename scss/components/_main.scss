@@ -3,7 +3,7 @@ main {
     background-color: $background-color-dark;
 
     .hero {
-        background: url('../img/hero-img.jpg') no-repeat center center/cover;
+        background: url('../img/hero-img.jpg') no-repeat center;
         height: calc(100vh - 140px);
         margin: 2vh;
         // display: flex;
@@ -33,6 +33,35 @@ main {
         }
     }
 }
+
+// .VideoPane-video {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     height: auto;
+//     min-height: 100%;
+//     min-width: 100%;
+//     width: auto;
+// }
+// audio, canvas, progress, video {
+//     display: inline-block;
+//     vertical-align: baseline;
+// }
+// *, :after, :before {
+//     box-sizing: inherit;
+// }
+
+// video {
+//     object-fit: contain;
+//     overflow-clip-margin: content-box;
+//     overflow: clip;
+// }
+// .VideoPane {
+//     color: #fff;
+//     display: block;
+//     position: relative;
+// }
 
 .cta-button {
     background-color: $cta-color;
@@ -402,7 +431,7 @@ main {
 }
 
 .unete-bg {
-    padding: 10px;
+    padding: 0;
     width: auto;
     height: auto;
     display: flex;

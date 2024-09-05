@@ -1,5 +1,5 @@
 /* Media Query para dispositivos pequeños (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
         width: 200px;
         height: auto;
@@ -15,18 +15,25 @@
         justify-content: end;
 
         img {
-            width: 100px;
-            height: auto;
-            border-radius: 15px;
+            // width: 100px;
+            // height: auto;
+            // border-radius: 15px;
+            display: none;
         }
+
         h1 {
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            flex: 1;
-            font-size: 1.2rem;
-            font-family: "Sedgwick Ave", cursive;
-            color: $text-color-light;
+            // text-align: center;
+            // margin: 0;
+            // padding: 20px;
+            // flex: 1;
+            // font-size: 1.2rem;
+            // font-family: "Sedgwick Ave", cursive;
+            // color: $text-color-light;
+            display: none;
+        }
+
+        .navbar-nav .dropdown-menu {
+            position: absolute;
         }
     }
 
@@ -86,6 +93,21 @@
     .nuestro-goal {
         background-color: #222;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    main .hero {
+        background: url('/img/xalatath.avif') no-repeat center;
+        height: calc(100vh - 140px);
+        margin: 0.5vh;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex(flex, center, center);
+        text-align: center;
+        color: $text-color-light;
     }
 }
 
